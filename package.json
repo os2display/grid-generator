@@ -1,8 +1,44 @@
 {
   "name": "os2display-grid-generator",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "main": "grid-generator.js",
   "description": "A grid generator for os2display",
   "author": "Sine Jespersen",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "check-coding-standards/markdownlint": "markdownlint README.md",
+    "apply-coding-standards/markdownlint": "markdownlint --fix README.md",
+    "lint:js": "eslint --ext .js ./",
+    "lint:js:fix": "eslint --ext .js --fix ./",
+    "apply-coding-standards": "yarn lint:js:fix && yarn apply-coding-standards/markdownlint",
+    "check-coding-standards": "yarn lint:js && yarn check-coding-standards/markdownlint",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.0.6",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-only-warn": "^1.0.3",
+    "eslint-plugin-prettier": "^3.4.0",
+    "jest": "^27.0.6",
+    "markdownlint-cli": "^0.28.1",
+    "prettier": "^2.3.2"
+  },
+  "dependencies": {
+    "eslint-plugin-jsdoc": "^36.0.6"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
 }
