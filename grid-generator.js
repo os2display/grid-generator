@@ -18,7 +18,7 @@ export function createGridArea(gridArray) {
  * The length of the longest string in the array.
  * @returns {Array} - a array with strings, "a"-"z","aa"-"zz"...
  */
-function genCharArray(characterLength) {
+export function genCharArray(characterLength) {
   const charArray = [];
   const i = "a".charCodeAt(0);
   const j = "z".charCodeAt(0);
