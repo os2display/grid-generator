@@ -1,6 +1,6 @@
 {
   "name": "os2display-grid-generator",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "main": "grid-generator.js",
   "description": "A grid generator for os2display",
   "author": "Sine Jespersen",
