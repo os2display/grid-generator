@@ -1,6 +1,6 @@
 {
   "name": "os2display-grid-generator",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "grid-generator.js",
   "description": "A grid generator for os2display",
   "author": "Sine Jespersen",
@@ -31,10 +31,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "jest": "^27.0.6",
     "markdownlint-cli": "^0.28.1",
+    "eslint-plugin-jsdoc": "^36.0.6",
     "prettier": "^2.3.2"
-  },
-  "dependencies": {
-    "eslint-plugin-jsdoc": "^36.0.6"
   },
   "jest": {
     "transform": {
